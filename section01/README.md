@@ -2,6 +2,6 @@
 
 In this section, I have some exercises about:
 
-- *Hello world!*: file ```exercise1.go```
-- *Basic Data type*: file ```exercise2.go```
-- *Control Structures*: file ```exercise3.go```
+- *exercise1*: file ```exercise1.go``` has the function **Fizzbuzz**
+- *exercise2*: file ```exercise2.go``` has the function **IsPrime**
+- *exercise3*: file ```exercise3.go``` has the function **IsPalindrome**
