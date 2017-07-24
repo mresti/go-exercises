@@ -4,6 +4,7 @@ import (
 	"sort"
 )
 
+// RuneSlice is the type for represent a rune
 type RuneSlice []rune
 
 func (p RuneSlice) Len() int           { return len(p) }
@@ -13,7 +14,7 @@ func (p RuneSlice) Swap(i, j int)      { p[i], p[j] = p[j], p[i] }
 // Anagram tests whether the two strings are anagrams of each other.
 // This function is NOT case sensitive and should handle UTF-8
 func Anagram(s1, s2 string) bool {
-	if len(s1) != len(s2){
+	if len(s1) != len(s2) {
 		return false
 	}
 
@@ -29,9 +30,9 @@ func Anagram(s1, s2 string) bool {
 	matches := true
 
 	for pos < len(runes1) && matches {
-		if runes1[pos] == runes2[pos]{
-			pos += 1
-		} else{
+		if runes1[pos] == runes2[pos] {
+			pos++
+		} else {
 			matches = false
 		}
 	}

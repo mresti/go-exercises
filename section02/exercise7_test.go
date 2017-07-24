@@ -1,8 +1,8 @@
 package section02
 
 import (
-	"testing"
 	"reflect"
+	"testing"
 )
 
 func TestTopCharactersSimple(t *testing.T) {
@@ -11,7 +11,7 @@ func TestTopCharactersSimple(t *testing.T) {
 	want := map[rune]int{
 		108: 4,
 		111: 3,
-		32: 3,
+		32:  3,
 	}
 
 	result := TopCharacters(input, 2)
@@ -19,4 +19,3 @@ func TestTopCharactersSimple(t *testing.T) {
 		t.Error(`TopCharacters("Hello, 世界Hello, 世界",1) = map[108:4 111:3 32:3]`)
 	}
 }
-

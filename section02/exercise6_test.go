@@ -1,8 +1,8 @@
 package section02
 
 import (
-	"testing"
 	"reflect"
+	"testing"
 )
 
 func TestInvertMapSimple(t *testing.T) {
@@ -13,7 +13,7 @@ func TestInvertMapSimple(t *testing.T) {
 
 	want := map[int]string{
 		1: "apple",
-		2:"orange",
+		2: "orange",
 	}
 
 	result := InvertMap(input)
@@ -21,4 +21,3 @@ func TestInvertMapSimple(t *testing.T) {
 		t.Error(`InvertMap(map[apple:1 orange:2]) = map[1:apple 2:orange]`)
 	}
 }
-

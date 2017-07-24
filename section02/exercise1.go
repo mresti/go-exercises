@@ -10,8 +10,8 @@ import (
 // For example, ParsePhone("123-456-7890") => "(123) 456-7890"
 //              ParsePhone("1 2 3 4 5 6 7 8 9 0") => "(123) 456-7890"
 func ParsePhone(phone string) string {
-	tmp1 := strings.Replace(phone, " ", "",-1)
-	tmp2 := strings.Replace(tmp1, "-", "",-1)
+	tmp1 := strings.Replace(phone, " ", "", -1)
+	tmp2 := strings.Replace(tmp1, "-", "", -1)
 	result := "(" + tmp2[:3] + ") " + tmp2[3:6] + "-" + tmp2[6:]
 	return result
 }
