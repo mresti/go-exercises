@@ -165,7 +165,7 @@ func TestCart_Checkout(t *testing.T) {
 	finalCart := Cart{[]string{"milk", "eggs"}, Price(514)}
 	var want Cart
 	priceExpected := Price(514)
-	msgExpected := fmt.Sprint("Cart balance is %v", priceExpected)
+	msgExpected := fmt.Sprintf("Cart balance is %v", priceExpected)
 
 	// Add items
 	input.AddItem("milk")

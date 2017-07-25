@@ -81,7 +81,7 @@ func (c *Cart) AddItem(item string) {
 // Checkout displays the final cart balance and clears the cart completely.
 func (c *Cart) Checkout() {
 	//fmt.Println("Cart balance is %v", c.TotalPrice)
-	log.Print("Cart balance is %v", c.TotalPrice)
+	log.Printf("Cart balance is %v", c.TotalPrice)
 	var init Price
 	c.Items = nil
 	c.TotalPrice = init
