@@ -15,3 +15,9 @@
 
 # Idea folder
 .idea/
+
+# Travis file
+.travis.yml
+
+# Gitignore file
+.gitignore
