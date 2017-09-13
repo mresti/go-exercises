@@ -5,6 +5,8 @@ go:
   - 1.8.x
   - 1.9.x
   - master
+  - release
+  - tip
 matrix:
   allow_failures:
     - go: master
