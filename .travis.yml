@@ -6,12 +6,11 @@ go:
   - 1.9.x
   - 1.10.x
   - 1.11.x
-  - 1.12.x
   - tip
 matrix:
   allow_failures:
     - go: master
   fast_finish: true
 script:
-  - go vet .
+  - go tool vet .
   - go test -v -race ./...
